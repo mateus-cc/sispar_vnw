@@ -1,0 +1,104 @@
+header {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 15%;
+}
+
+main {  
+
+    .grupoUm {
+        border: 1px solid black;
+        width: 30%;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .inputNome {
+        width: 45%;
+    }
+
+    .inputEmpresa {
+        width: 25%;
+    }
+
+    .inputPrestacao {
+        width: 25%;
+    }
+
+    .inputMotivo {
+        width: 100%;
+    }
+
+
+
+}
+
+    table {
+        width: 95%;
+        margin: 0 auto;
+
+        thead {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid #CBD4E1;
+            background-color: #CBD4E1;
+
+            tr {
+                border: 1px solid #CBD4E1;
+            }
+        }
+    }
+
+
+footer {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 25%;
+    gap: 5px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+
+
+    input {
+        border: 1px solid #CBD4E1;
+        border-radius: 0.38rem;
+    }
+
+    #btnEnviarAnalise {
+        background-color: #001A3D;
+        color: #FFFFFF;
+        height: 6vh;  
+        width: 17vw;  
+        border-radius: 0.38rem;
+        margin-top: 2.5rem;
+        border: none;
+
+        img {
+            margin-right: 5px;
+            width: 0.75rem;
+        }
+    }
+
+    #btnCancelar {
+        background-color: #A60B2F;
+        color: #FFFFFF;
+        height: 6vh;  
+        width: 17vw;  
+        border-radius: 0.38rem;
+        margin-top: 2.5rem;
+        border: none;
+
+        img {
+            margin-right: 5px;
+            width: 0.75rem;
+        }
+    }
+}
