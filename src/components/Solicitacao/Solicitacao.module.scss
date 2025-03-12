@@ -3,15 +3,46 @@ header {
     width: 30vw;
     justify-content: space-between;
     align-items: center;
-    margin: 1% 15%;
+    // margin: 1% 15%;
 }
 
-main {  
+.containerSolicitacao {
+    display: flex;
+}
+
+.containerPrincipalSolicitacao {
+    width: 95%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    #formulario {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 35vh;
+
+    }
+
+    input, select, textarea {
+        width: 100%;
+        height: 4vh;
+        border-radius: 6px;
+        border: solid #cbd4e1;
+    }
+
+    label {
+        color: #23282f;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
 
     .grupoUm {
-        border: 1px solid black;
-        width: 30%;
-        height: 25vh;
+        width: 40%;
+        height: 35vh;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -20,52 +51,155 @@ main {
 
     .inputNome {
         width: 45%;
-    }
-
-    .inputEmpresa {
+      }
+      
+      .inputEmpresa {
         width: 25%;
-    }
-
-    .inputPrestacao {
+      }
+      
+      .inputPrestacao {
         width: 25%;
-    }
-
-    .inputMotivo {
+      }
+      
+      .inputMotivo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+          height: 10vh;
+        }
     }
+}
 
+.barraVertical {
+    height: 34vh;
+    background-color: #cbd4e1;
+    width: 0.1vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
+  .grupo2{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.inputData{
+  width: 25%;
+}
+
+.tipoDeDespesa{
+  width: 30%;
+}
+
+.centroDeCusto{
+  width: 37%;
+}
+
+.divisoes {
+    width: 5%;
+}
+
+.pep {
+    width: 5%;
+}
+
+.ordem, .distancia{
+    width: 9%;
+}
+
+.moeda {
+    width: 10%;
+}
+
+.valorFaturado {
+    width: 15%;
+
+}
+.valorKm, .despesa{
+  width: 10%;
+}
+
+label {
+    color: #23282f;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.botoes{
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+
+  #btnSalvar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #001A3D;
+    color: #FFFFFF;
+    border-radius: 0.38rem;
+    width: 80%;
+    height: 6vh;
+    border: none;
+  }
+
+  #btnCancelarFormulario {
+    background-color: #00BEDD;
+    width: 40%;
+    border-radius: 0.38rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 6vh;
+    border: none;
+  }
 }
 
     table {
         width: 95%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
 
         thead {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            border: 1px solid #CBD4E1;
             background-color: #CBD4E1;
+            border-radius: 0.38rem;
 
             tr {
-                border: 1px solid #CBD4E1;
+                border-radius: 0.38rem;
             }
         }
-    }
 
+        .espaçoVazio {
+            background-color: #CBD4E1;
+            width: 3%;
+        }
+
+        tr {
+            display: flex;
+            justify-content: space-between;            
+        }
+    }
 
 footer {
     width: 70%;
     display: flex;
     justify-content: space-around;
-    margin: 2% 25%;
+    margin: 2% 27%;
     gap: 5px;
     align-items: center;
     font-size: 16px;
     font-weight: 700;
-
+    margin-top: 13%;
 
     input {
         border: 1px solid #CBD4E1;
